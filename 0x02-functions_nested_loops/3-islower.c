@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * main - Ceck code
+ * _islower - Ceck code
  *
- * description : describe it
+ * @c: returned character
+ * description : checks for lowercase character c
  *
  * Return: always 0
  */

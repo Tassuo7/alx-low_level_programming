@@ -1,10 +1,9 @@
 #include "main.h"
-/*
- * main - Check code
- *
- * description : describe it
- *
- * Return: always 0
+/**
+ * print_sign - Check description
+ * Description: It a function that prints the sign of a number
+ * @n: An input number
+ * Return: 0 if seccussful else 0
  */
 int print_sign(int n)
 {
