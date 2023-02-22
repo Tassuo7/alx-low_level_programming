@@ -1,6 +1,8 @@
-include "main.h"
+#include "main.h"
 /*
  * main - Check code
+ *
+ * description : describe it
  *
  * Return: always 0
  */
