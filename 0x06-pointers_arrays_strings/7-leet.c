@@ -2,23 +2,22 @@
 
 /**
  * leet - a function that encodes a string into 1337.
- * @strng: a string
- * Return: the encoded string
+ * @s: an input string to encode
+ * Return: An encode string
  */
-char *leet(char *strng)
+char *leet(char *s)
 {
-	int i = 0, j = 0;
-	char codes[10] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'},
-	char s[10] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	int i = 0, j;
+	char subs[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'},
+    	     str[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 
-	while (strng[j])
-	{
-		for (i = 0; i < 10; i++)
-			if (strng[j] == s[i])
-				strng[j] = codes[i];
+	while (s[i])
+		{
+		for (j = 0; j < 10; j++)
+			if (s[i] == str[j])
+				s[i] = subs[j];
+			i++;
+		}
 
-		j++;
-	}
-
-	return (strng);
+	return (s);
 }
