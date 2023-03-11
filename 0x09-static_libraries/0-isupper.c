@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * _isupper - Ceck description
  * Description: It a function that checks for uppercase character
