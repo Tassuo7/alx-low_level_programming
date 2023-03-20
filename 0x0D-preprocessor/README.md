@@ -1,22 +1,20 @@
-<<<<<<< HEAD
-README.md
-=======
-# 0x0C. C - More malloc, free
-### Concepts
-*For this project, we expect you to look at this concept:*
-* [Automatic and dynamic allocation, malloc and free](https://intranet.alxswe.com/concepts/62)
+# 0x0D. C - Preprocessor
 ## Resources
 ### Read or watch:
-* [Do I cast the result of malloc?](https://stackoverflow.com/questions/605845/do-i-cast-the-result-of-malloc)
-### man or help:
-* exit (3)
-* calloc
-* realloc
+* [Understanding C program Compilation Process](https://www.youtube.com/watch?v=eW5he5uFBNM)
+* [Object-like Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Object-like-Macros.html#Object-like-Macros)
+* [Macro Arguments](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Macro-Arguments.html#Macro-Arguments)
+* [Pre Processor Directives in C](https://www.youtube.com/watch?v=X6HiYbY3Uak)
+* [The C Preprocessor](https://www.cprogramming.com/tutorial/cpreprocessor.html)
+* [Standard Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Standard-Predefined-Macros.html#Standard-Predefined-Macros)
+* [include guard](https://en.wikipedia.org/wiki/Include_guard)
+* [Common Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Common-Predefined-Macros.html#Common-Predefined-Macros)
 ## Learning Objectives
 At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/),**without the help of Google:**
 ## General
-* How to use the exit function
-* What are the functions calloc and realloc from the standard library and how to use them
+* What are macros and how to use them
+* What are the most common predefined macros
+* How to include guard your header files
 ## Copyright - Plagiarism
 * You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
 * You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
@@ -29,11 +27,11 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 * All your files should end with a new line
 * A README.md file, at the root of the folder of the project is mandatory
 * Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-* You are not allowed to use global variables
 * No more than 5 functions per file
+* You are not allowed to use global variables
 * The only C standard library functions allowed are malloc, free and exit. Any use of functions like printf, puts, calloc, realloc etc… is forbidden
+* You are allowed to use _putchar
 * You don’t have to push _putchar.c, we will use our file. If you do it won’t be taken into account
 * In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
-* The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
 * Don’t forget to push your header file
->>>>>>> 85ed2d6fa8fdb0afc9c335d345d37e91d3b22a67
+* All your header files should be include guarded
