@@ -7,7 +7,7 @@
  *
  * Return: the converted number, or 0
  */
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int unit = 0;
 	int prcr, pwr;
@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b);
 	if (!b)
 		return (0);
 
-	for (prcr = 0 ; b[prcr] != '/0' ; prcr++)
+	for (prcr = 0 ; b[prcr] != '\0' ; prcr++)
 	{
 		if (b[prcr] != '0' && b[prcr] != '1')
 		return (0);
