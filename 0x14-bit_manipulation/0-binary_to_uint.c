@@ -19,6 +19,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[prcr] != '0' && b[prcr] != '1')
 		return (0);
 	}
+	prcr--;
 
 	for (pwr = 1 ; prcr >= 0 ; prcr--)
 	{
