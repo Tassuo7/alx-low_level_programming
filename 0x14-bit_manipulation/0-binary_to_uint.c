@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int
@@ -21,8 +20,11 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 
-	for (pwr = 0 ; prcr >= 0 ; prcr--)
-		unit += b[prcr] * pow(2, pwr);
+	for (pwr = 1 ; prcr >= 0 ; prcr--)
+	{
+		unit += b[prcr] * pwr;
+		pwr *= 2;
+	}
 
 	return (unit);
 }
