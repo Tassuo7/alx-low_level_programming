@@ -7,7 +7,7 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *lv = h;
+	dlistint_t *lv = (slistint *)h;
 	size_t node = 0;
 
 	while (lv)
