@@ -7,12 +7,13 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
+	dlistint_t *lv = h;
 	size_t node = 0;
 
-	while (h)
+	while (lv)
 	{
-		printf("%d\n", h->n);
-		h = h->next;
+		printf("%d\n", lv->n);
+		lv = lv->next;
 		node++;
 	}
 	return (node);
