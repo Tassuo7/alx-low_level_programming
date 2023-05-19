@@ -19,7 +19,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		*head = nnode;
 		return (nnode);
 	}
-	while (!lh->next)
+	while (lh->next)
 		lh = lh->next;
 	nnode->prev = lh;
 	nnode->next = NULL;
