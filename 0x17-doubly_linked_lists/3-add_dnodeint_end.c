@@ -14,15 +14,14 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (!nnode)
 		return (NULL);
 	nnode->n = n;
-	if (!head)
+	if (*head == NULL)
 	{
 		*head = nnode;
 		return (nnode);
 	}
-	while (lh->next)
+	while (lh->next != NULL)
 		lh = lh->next;
 	nnode->prev = lh;
-	nnode->next = NULL;
 	lh->next = nnode;
 	return (nnode);
 }
