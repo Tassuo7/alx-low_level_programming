@@ -5,7 +5,7 @@
  * @ht: the hash table you want to add the key/value to
  * @key: The key
  * @value: The value associated with key.
- * Return: 1 if it secceeded, 1 otherwise
+ * Return: 1 if it secceeded, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -32,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 
 	new_hn = malloc(sizeof(hash_node_t));
-	if (new_n == NULL)
+	if (new_hn == NULL)
 	{
 		free(keyy);
 		return (0);
