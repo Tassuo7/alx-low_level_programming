@@ -1,10 +1,4 @@
 #include "hash_tables.h"
-shash_table_t *shash_table_create(unsigned long int size);
-int shash_table_set(shash_table_t *ht, const char *key, const char *value);
-char *shash_table_get(const shash_table_t *ht, const char *key);
-void shash_table_print(const shash_table_t *ht);
-void shash_table_print_rev(const shash_table_t *ht);
-void shash_table_delete(shash_table_t *ht);
 /**
  * shash_table_get - function get value with key from hash table
  * @key: the key
@@ -29,6 +23,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 /**
  * shash_table_create - function that create a sorted hash table
  * @size: The size of shash table
+ * Description: function that creates a sorted hash table
  * Retunr: NULL or pointer to the sorted table
  */
 shash_table_t *shash_table_create(unsigned long int size)
