@@ -24,7 +24,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
  * shash_table_create - function that create a sorted hash table
  * @size: The size of shash table
  * Description: function that creates a sorted hash table
- * Retunr: NULL or pointer to the sorted table
+ * Return: NULL or pointer to the sorted table
  */
 shash_table_t *shash_table_create(unsigned long int size)
 {
@@ -127,11 +127,9 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
 		return (0);
-
 	val_c = strdup(value);
 	if (val_c == NULL)
 		return (0);
-
 	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->shead;
 	while (tmp)
@@ -144,7 +142,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		}
 		tmp = tmp->snext;
 	}
-
 	new_shn = malloc(sizeof(shash_node_t));
 	if (new_shn == NULL)
 	{
@@ -161,7 +158,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	new_shn->value = val_c;
 	new_shn->next = ht->array[index];
 	ht->array[index] = new_shn;
-
 	if (ht->shead == NULL)
 	{
 		new_shn->sprev = NULL;
@@ -189,6 +185,5 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 			tmp->snext->sprev = new_shn;
 		tmp->snext = new_shn;
 	}
-
 	return (1);
 }
