@@ -11,6 +11,7 @@ def island_perimeter(grid):
     isperim = 0
     verz = len(grid[0])
     horz = len(grid)
+
     for h in range(horz):
         for v in range(verz):
             if grid[h][v] == 1:
