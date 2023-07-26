@@ -18,6 +18,6 @@ def island_perimeter(grid):
                 isperim += 4
                 if h > 0 and grid[h - 1][v] == 1:
                     isperim -= 2
-                if h > 0 and grid[h][v - 1] == 1:
+                if v > 0 and grid[h][v - 1] == 1:
                     isperim -= 2
     return isperim
