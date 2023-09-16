@@ -13,7 +13,7 @@ int jump_search(int *array, size_t size, int value)
 {
 	int j = (int)sqrt((double)size), jump = 0, deb = 0, i = 0;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 	do {
 		printf("Value checked array[%u] = [%d]\n", deb, array[jump]);
