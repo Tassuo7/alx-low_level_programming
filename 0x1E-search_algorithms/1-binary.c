@@ -33,8 +33,6 @@ int re_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
 
-	if (array == NULL || size == 0)
-		return (-1);
 	if (half && size % 2 == 0)
 		half--;
 	print_array(array, size);
@@ -60,6 +58,8 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t idx;
 
+	if (array == NULL || size == 0)
+		return (-1);
 	idx = re_search(array, size, value);
 	if (array[idx] != value)
 		return (-1);
