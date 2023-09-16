@@ -33,6 +33,8 @@ int re_search(int *array, size_t size, int value)
 {
 	size_t half = size / 2;
 
+	if (array == NULL || size == 0)
+		return (-1);
 	if (half && size % 2 == 0)
 		half--;
 	print_array(array, size);
