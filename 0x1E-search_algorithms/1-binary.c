@@ -35,7 +35,7 @@ int re_search(int *array, size_t size, int value)
 
 	if (!array || size == 0)
 		return (-1);
-	if (size % 2 == 0)
+	if (half && size % 2 == 0)
 		half--;
 	print_array(array, size);
 
